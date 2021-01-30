@@ -1,0 +1,47 @@
+/* RESET CSS */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    background: #5c00a7;
+    color: #00f195;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: absolute;
+}
+
+.wrapper {
+    width: 50%;
+    height: 100%;
+    background: #00f195;
+    color: #5c00a7;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide {
+    position:absolute;
+    top: 50%;
+    white-space: nowrap;
+    font-size: 10em;
+    line-height: 220px;
+    overflow: hidden;
+    font-family: "arial black", Arial, Helvetica, sans-serif;
+    animation: slider 10s linear infinite;
+}
+
+@keyframes slider {
+    0%{
+        transform: translate(0, -50%);
+    }
+    100%{
+        transform: translate(-50%, -50%)
+    }
+}
